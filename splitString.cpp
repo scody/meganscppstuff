@@ -9,7 +9,14 @@ int split(string inputStr, char separator, string returnArray[], int arraySize) 
 
     // loop over each character of the string
     for(int i = 0; i <= inputStr.size(); i++) {
+
+        // start by just placing the currentCharacter into 
+        // a variable with an appropriate name. It just makes
+        // it easier. if we do this, then we don't have to 
+        // constantly use inputStr[i] each time we want to use
+        // the character, easier to read
         char currentCharacter = inputStr[i];
+        
         // if we have reached the separator, then we need
         // to add the currentString (that we have been building)
         // to the array, and increment elementIndex
